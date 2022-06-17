@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url(./bg-intro-desktop.png) no-repeat center;
+  background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins' Sans-Serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.a {
+  margin-left: 70px;
+}
+section {
+  padding: 2rem;
+}
+h1 {
+  font-size: 3rem;
+  color: white;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+p {
+  color: white;
+  font-weight: 500;
+}
+.ab {
+  background-color: hsl(248 32% 49%);
+  color: white;
+  padding: 10px 60px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px hsl(249 10% 26%);
+}
+.register-box {
+  width: 450px;
+  margin: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px 0px hsl(249 10% 26%);
+  padding: 15px;
+}
+input {
+  display: block;
+  margin: 1rem 0;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border: 1px solid hsl(246 25% 77%);
+  border-radius: 5px;
+  outline: none;
+}
+::placeholder {
+  font-family: 'Poppins' Sans-Serif;
+  font-weight: 400;
+}
+button {
+  background-color: hsl(154, 59%, 51%);
+  color: white;
+  width: 100%;
+  border-radius: 5px;
+  padding: 9px;
+  font-family: 'Poppins' Sans-Serif;
+  margin-bottom: 10px;
+  border: none;
+}
+.link {
+  color: hsl(246, 25%, 77%);
+  font-size: 12px;
+  text-align: center;
+}
+a {
+  text-decoration: none;
+  color: hsl(0, 100%, 74%);
+}
+input:required:invalid {
+  outline: none;
+  border: 1px solid hsl(0, 100% 74%);
+  background-image: url('/icon-error.svg');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-origin: content-box;
+}
+input:invalid+span {
+  display: inline;
+  color: hsl(0 100% 74%);
+  float: right;
+  font-size: 14px;
+}
+input:valid {
+  outline: none;
+  border: none;
+  border: 1px solid hsl(154 59% 51%);
+}
+span {
+  display: none;
+}
+input:focus:invalid {
+  background: url(/icon-error.svg) no-repeat 95% 50%;
+  background-size: 25px;
+  border: 2px solid hsl(0, 100%, 74%);
+  transition: border 10ms;
+}
+input:focus:invalid~.error::after {
+  content: attr(data-error);
+  position: relative;
+  bottom: 0;
+  font-style: italic;
+  font-size: 14px;
+  font-weight: 400;
+  right: 0;
+  padding-bottom: 1rem;
+  color: hsl(0, 100%, 74%);
+  float: right;
+}
+@media (max-width: 1164px) and (min-width: 900px) {
+  main {
+    margin: auto 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .ab, .register-box {
+    width: 400px;
+  }
+  h2 {
+    font-size: 2rem;
+
+  }
+}
+@media (max-width: 533px) {
+  .ab, .register-box {
+    width: 350px;
+  }
+  main {
+    margin: auto 50px;
+  }
+  h2 {
+    font-size: 1.8rem;
+
+  }
+  .text {
+    font-size: 14px;
+  }
+}
+@media (max-width: 408px) {
+  .ab, .register-box {
+    width: 300px;
+  }
+  main {
+    margin: auto 30px;
+  }
+  h2 {
+    font-size: 1.7rem;
+
+  }
+}
+@media (max-width: 857px) and (min-width: 357px) {
+  body {
+  background: url(/bg-intro-mobile.png) no-repeat center;
+  background-color: hsl(0, 100%, 74%);
+  font-family: 'Poppins' Sans-Serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+.a {
+  margin-left: 0;
+  text-align: center;
+}
+}
