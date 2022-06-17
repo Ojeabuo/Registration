@@ -85,7 +85,7 @@ a {
 input:required:invalid {
   outline: none;
   border: 1px solid hsl(0, 100% 74%);
-  background-image: url(/icon-error.svg);
+  background-image: url(./icon-error.svg);
   background-repeat: no-repeat;
   background-position: right;
   background-origin: content-box;
@@ -105,7 +105,7 @@ span {
   display: none;
 }
 input:focus:invalid {
-  background: url(/icon-error.svg) no-repeat 95% 50%;
+  background: url(./icon-error.svg) no-repeat 95% 50%;
   background-size: 25px;
   border: 2px solid hsl(0, 100%, 74%);
   transition: border 10ms;
@@ -166,7 +166,7 @@ input:focus:invalid~.error::after {
 }
 @media (max-width: 857px) and (min-width: 357px) {
   body {
-  background: url(/bg-intro-mobile.png) no-repeat center;
+  background: url(./bg-intro-mobile.png) no-repeat center;
   background-color: hsl(0, 100%, 74%);
   font-family: 'Poppins' Sans-Serif;
   font-size: 16px;
